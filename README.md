@@ -1,1 +1,1 @@
-# Cloudflare as Reverse DNS script
+# Cloudflare as Reverse DNS
