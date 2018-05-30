@@ -4,7 +4,7 @@ Cloudflare is an amazing company. They provide a wide variety of services rangin
 
 I uses Cloudflare's DNS service and with their excellent REST API, I created a BASH script to update domain record once my ISP changed my IP address.
 
-https://johnpili.com/cloudflare-as-dynamic-dns/
+https://johnpili.com/use-cloudflare-as-dynamic-dns/
 
 <h3>Disclaimer</h3>
 Cloudflare's DNS REST API is owned by Cloudflare and subject to Cloudflare's terms and conditions.
