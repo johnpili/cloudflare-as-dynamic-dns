@@ -2,6 +2,7 @@
 
 IP=$(curl -s "https://ipinfo.io/ip")
 echo "THIS IS IP $IP"
+export DYNIP="$IP"
 
 curlUpdate(){
 curl -X PUT "https://api.cloudflare.com/client/v4/zones/$1/dns_records/$2" \
