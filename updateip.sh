@@ -16,16 +16,7 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/$1/dns_records/$2" \
 if [ "$IP" != "$OLD_IP" ]; then
     echo "Changing IP"
     echo $IP > dynip.txt
-<<<<<<< HEAD
 
-    curlUpdate "ZONE_ID" "ID_OF_DNS_RECORD" "$IP" "johnpili.com"
-    curlUpdate "ZONE_ID" "ID_OF_DNS_RECORD" "$IP" "www.johnpili.com"
-    #curlUpdate "ZONE_ID" "ID_OF_DNS_RECORD" "$IP" "domain1.com"
-    #curlUpdate "ZONE_ID" "ID_OF_DNS_RECORD" "$IP" "www.domain1.com"
-    #curlUpdate "ZONE_ID" "ID_OF_DNS_RECORD" "$IP" "domain2.com"
-    #curlUpdate "ZONE_ID" "ID_OF_DNS_RECORD" "$IP" "www.domain2.com"
-
-=======
     curlUpdate "ZONE_ID" "ID_OF_DNS_RECORD" "$IP" "johnpili.com" "true"
     curlUpdate "ZONE_ID" "ID_OF_DNS_RECORD" "$IP" "www.johnpili.com" "true"
     curlUpdate "ZONE_ID" "ID_OF_DNS_RECORD" "$IP" "ssh.johnpili.com" "false"
@@ -33,5 +24,4 @@ if [ "$IP" != "$OLD_IP" ]; then
     #curlUpdate "ZONE_ID" "ID_OF_DNS_RECORD" "$IP" "www.domain1.com" "true"
     #curlUpdate "ZONE_ID" "ID_OF_DNS_RECORD" "$IP" "domain2.com" "true"
     #curlUpdate "ZONE_ID" "ID_OF_DNS_RECORD" "$IP" "www.domain2.com" "true"
->>>>>>> 3424c5a9850f6bc658405f52777bce497130a5d3
 fi
